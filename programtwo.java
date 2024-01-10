@@ -5,12 +5,10 @@ public class programtwo {
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter the Number of Subjects:");
         int subno = sn.nextInt();
-        float marks = 0;
         float tm = 0;
         for (float j = 1; j <= subno; j++) {
             System.out.printf("Enter the Subject %.0f marks (in 100):\n", j);
-            marks = sn.nextFloat();
-            tm += marks;
+            tm += sn.nextFloat();
         }
         sn.close();
         System.out.printf("Total marks obtained is %.3f in %d .\n", tm, (subno * 100));
