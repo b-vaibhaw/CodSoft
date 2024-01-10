@@ -14,7 +14,7 @@ public class programtwo {
         System.out.printf("Total marks obtained is %.3f in %d .\n", tm, (subno * 100));
         System.out.printf("Your average percentage in %d subject(s) is %.3f .\n", subno, (tm / subno));
 
-        if (marks / subno >= 90) {
+        if (tm / subno >= 90) {
             System.out.println("Grade is A+.");
         } else if (tm / subno >= 80) {
             System.out.println("Grade is A.");
